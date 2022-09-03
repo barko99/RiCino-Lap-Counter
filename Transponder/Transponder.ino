@@ -19,7 +19,12 @@
 // **********************************************************************************
 
 
-#include "IRTinyTX.h" // Short version on IRemote library
+#include <IRremote.h> 
+/*
+  Seems to work better with Arduino IDE 1.8.19, ATTINYCORE 1.5.2, IRRemote 2.8.0
+  Wrong Timing issues / not recieving NEC Code are solved with using the IRRemote Lib in the above setup
+  */
+
 
 // Transponder Code
 // The transponder code is a 2 byte HEX code which
